@@ -1,21 +1,25 @@
 import React from 'react';
 import {
         Card,
-        CardHeader,   
+        CardBody,
+        CardTitle,   
         Container
         } from 'reactstrap';
+import Main from './Main';
+
 import { RandomQuote } from './RandomQuote';
 
 export default function HomeComponent() {
     return (
-        <div className="main-content">
-            <Container>
+    <div className="main-content">
+        <Container>
             <Card className="neomorph">
-            <CardHeader><h1 className="content-header text-center">Simple Quotes</h1></CardHeader>
-                    <RandomQuote />
+            <CardBody>
+            <CardTitle><h1 className="content-header text-center">Simple Quotes</h1></CardTitle>
+            <Main />
+            </CardBody>
             </Card>
-            </Container>
-
-        </div>
+        </Container>
+    </div>
     )
 }
