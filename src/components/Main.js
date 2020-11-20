@@ -14,12 +14,14 @@ function Main() {
         <div>
             <Nav tabs>
             <NavItem>
-            <NavLink 
-                className={classnames({ active: activeTab === '1'})}
-                onClick={() => { toggle('1');}}
-                
-                >Random Quote</NavLink>
+                <NavLink 
+                  className={classnames({ active: activeTab === '1'})}
+                  onClick={() => { toggle('1');}}
+                >
+                Random Quote
+                </NavLink>
             </NavItem>
+
             <NavItem>
             <NavLink 
                 className={classnames({ active: activeTab === '2'})}
@@ -27,6 +29,7 @@ function Main() {
                 >Search Quote</NavLink>
             </NavItem>
             </Nav>
+            
             <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
                     <RandomQuote />

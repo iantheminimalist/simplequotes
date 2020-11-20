@@ -7,7 +7,7 @@ import {
         } from 'reactstrap';
 import Main from './Main';
 
-import { RandomQuote } from './RandomQuote';
+
 
 export default function HomeComponent() {
     return (
