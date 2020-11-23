@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import classnames from 'classnames';
 import { RandomQuote } from './RandomQuote';
+import AddQuoteForm from './AddQuote';
 
 
 function Main() {
@@ -35,7 +36,7 @@ function Main() {
                     <RandomQuote />
                 </TabPane>
                 <TabPane tabId="2">
-                    <RandomQuote />
+                    <AddQuoteForm />
                 </TabPane>
             </TabContent>
         </div>
